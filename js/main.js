@@ -1,18 +1,36 @@
-/* Sylvyn — minimal: mobile nav only. Respects prefers-reduced-motion. */
+/* Sylvyn — mobile nav. Respects prefers-reduced-motion. */
 (function () {
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
   if (!toggle || !nav) return;
 
-  toggle.addEventListener("click", function () {
-    var open = nav.classList.toggle("is-open");
+  var MQ = window.matchMedia("(max-width: 880px)");
+
+  function setOpen(open) {
+    nav.classList.toggle("is-open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(!nav.classList.contains("is-open"));
   });
 
   nav.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
-      nav.classList.remove("is-open");
-      toggle.setAttribute("aria-expanded", "false");
+      setOpen(false);
     });
   });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") setOpen(false);
+  });
+
+  function onMq() {
+    if (!MQ.matches) setOpen(false);
+  }
+  if (typeof MQ.addEventListener === "function") {
+    MQ.addEventListener("change", onMq);
+  } else if (typeof MQ.addListener === "function") {
+    MQ.addListener(onMq);
+  }
 })();
