@@ -8,8 +8,8 @@ Institutional front door for **Sylvyn Ltd** (SC861646). Cream / Montserrat Light
 |------|---------|
 | `index.html` | Home — hero, £394m proof, Market + Moat, CTA |
 | `why-scotland.html` | Three beats + renewables strip (sourced GW / £ / TWh only) |
-| `about.html` | Thin Management line + company identity |
-| `contact.html` | Partner / Request NDA → mailto |
+| `about.html` | Institutional partners + company identity |
+| `contact.html` | Partner with Sylvyn → mailto |
 | `css/styles.css` | Locked palette + typography |
 | `js/main.js` | Mobile nav only |
 | `assets/hero-scotland-dusk.jpg` (+ `.webp`) | Quiet dusk landscape (no turbines / solar / text) |
@@ -40,7 +40,7 @@ gh repo create sylvyn-website --public --source=. --remote=origin --push
 ```
 
 3. Enable Pages: **Settings → Pages → Deploy from branch → `main` / root** (or use `gh-pages` branch with site at root).
-4. Staging URL pattern: `https://USER.github.io/sylvyn-website/`  
+4. Staging URL pattern: `https://USER.github.io/sylvyn-website/`
    (Replace `USER` / repo name with the authenticated account.)
 
 ### Updating staging
@@ -59,22 +59,22 @@ Live face today is the IONOS holding page. **Do not FTP-overwrite production unt
 
 When approved, follow **[IONOS_FTP_UPLOAD.md](./IONOS_FTP_UPLOAD.md)**:
 
-1. Backup current document root first  
-2. Upload this folder’s contents to the webspace document root  
-3. Leave MX / DNS / Google Workspace mail untouched  
-4. Confirm on sylvyn.co.uk only after upload verification  
+1. Backup current document root first
+2. Upload this folder’s contents to the webspace document root
+3. Leave MX / DNS / Google Workspace mail untouched
+4. Confirm on sylvyn.co.uk only after upload verification
 
 ## Content rails (do not break)
 
-- No Westfield or other VDR place names  
-- No megawatt ladders / invented MW figures on the open web  
-- GW / £ / TWh only as already sourced in Why Scotland figures  
-- CTA: Partner / Request NDA → `info@sylvyn.co.uk` only  
-- Company: Sylvyn Ltd, SC861646, Office 145, 18 Young Street, Edinburgh EH2 4JB  
+- No Westfield or other VDR place names
+- No megawatt ladders / invented MW figures on the open web
+- GW / £ / TWh only as already sourced in Why Scotland figures
+- CTA: Partner with us / Get in touch → `info@sylvyn.co.uk` only
+- Company: Sylvyn Ltd, SC861646, Office 145, 18 Young Street, Edinburgh EH2 4JB
 
 ## Next steps for Rob
 
-1. Review staging (once GitHub auth + Pages are live)  
-2. Approve wording / design tweaks  
-3. Explicit **Publish yes** → FTP to IONOS per `IONOS_FTP_UPLOAD.md`  
-4. Only then consider CNAME / DNS for custom domain (MX untouched)  
+1. Review staging (once GitHub auth + Pages are live)
+2. Approve wording / design tweaks
+3. Explicit **Publish yes** → FTP to IONOS per `IONOS_FTP_UPLOAD.md`
+4. Only then consider CNAME / DNS for custom domain (MX untouched)
