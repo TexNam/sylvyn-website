@@ -68,7 +68,7 @@ When approved, follow **[IONOS_FTP_UPLOAD.md](./IONOS_FTP_UPLOAD.md)**:
 ## Content rails (do not break)
 
 - No Westfield or other VDR place names
-- Exactly one public NDA mention: Partners detail line only (not Home / footer / other pages)
+- Zero public NDA mentions on the open site
 - No megawatt ladders / invented MW figures on the open web
 - GW / £ / TWh only as already sourced in Why Scotland figures
 - CTA: Partner with us / Get in touch → `info@sylvyn.co.uk` only
