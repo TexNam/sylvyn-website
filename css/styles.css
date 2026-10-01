@@ -650,7 +650,7 @@ h3 {
 /* ——— Phone / small tablet ——— */
 @media (max-width: 640px) {
   :root {
-    --pad-x: 1.5rem;
+    --pad-x: 2rem;
     --text: 1rem;
   }
 
@@ -676,8 +676,8 @@ h3 {
   }
 
   .hero .wrap {
-    padding-left: max(1.5rem, env(safe-area-inset-left, 0px));
-    padding-right: max(1.5rem, env(safe-area-inset-right, 0px));
+    padding-left: max(2rem, env(safe-area-inset-left, 0px));
+    padding-right: max(2rem, env(safe-area-inset-right, 0px));
   }
 
   .cta-row {
