@@ -349,6 +349,17 @@ h3 {
 }
 
 /* ——— Proof number ——— */
+.proof-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 3rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 720px) {
+  .proof-row { grid-template-columns: 1fr; gap: 2rem; }
+}
+
 .proof {
   text-align: left;
 }
