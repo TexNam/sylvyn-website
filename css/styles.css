@@ -15,7 +15,7 @@
   --max: 72rem;
   --text: 1.0625rem;
   --leading: 1.65;
-  --pad-x: 2rem;
+  --pad-x: 3rem;
   --font-display: "Montserrat", system-ui, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
@@ -214,7 +214,16 @@ button:focus-visible {
 .wrap {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0 var(--pad-x);
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: max(var(--pad-x), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--pad-x), env(safe-area-inset-right, 0px));
+}
+
+/* Hero text inset: independent of any .hero__content vertical-only overrides */
+.hero .wrap {
+  padding-left: max(3rem, env(safe-area-inset-left, 0px));
+  padding-right: max(3rem, env(safe-area-inset-right, 0px));
 }
 
 .section {
@@ -666,6 +675,11 @@ h3 {
     padding-bottom: 2.75rem;
   }
 
+  .hero .wrap {
+    padding-left: max(1.5rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.5rem, env(safe-area-inset-right, 0px));
+  }
+
   .cta-row {
     flex-direction: column;
     align-items: stretch;
@@ -698,6 +712,6 @@ h3 {
 
 @media (min-width: 1280px) {
   :root {
-    --pad-x: 2.5rem;
+    --pad-x: 3rem;
   }
 }
