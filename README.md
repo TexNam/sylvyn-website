@@ -6,10 +6,11 @@ Institutional front door for **Sylvyn Ltd** (SC861646). Cream / Montserrat Light
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Home — hero, £394m proof, Market + Moat, CTA |
-| `why-scotland.html` | Three beats + renewables strip (sourced GW / £ / TWh only) |
-| `about.html` | Institutional partners + company identity |
-| `contact.html` | Partner with Sylvyn → mailto |
+| `index.html` | Home — hero, renewables proof, Market + Moat, CTA |
+| `why-scotland.html` | Beats + renewables strip (sourced GW / £ / TWh only) |
+| `about.html` | Who Sylvyn is + company identity |
+| `partners.html` | Partnership in practice + NDA line |
+| `contact.html` | Door — info@sylvyn.co.uk only |
 | `css/styles.css` | Locked palette + typography |
 | `js/main.js` | Mobile nav only |
 | `assets/hero-scotland-dusk.jpg` (+ `.webp`) | Quiet dusk landscape (no turbines / solar / text) |
