@@ -104,7 +104,10 @@ button:focus-visible {
 .site-header__inner {
   max-width: var(--max);
   margin: 0 auto;
-  padding: 0.85rem var(--pad-x);
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: max(var(--pad-x), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--pad-x), env(safe-area-inset-right, 0px));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -188,7 +191,10 @@ button:focus-visible {
     background: var(--cream);
     border-bottom: 1px solid var(--line);
     box-shadow: 0 12px 24px rgba(27, 25, 21, 0.08);
-    padding: 0.75rem var(--pad-x) 1.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 1.25rem;
+    padding-left: max(var(--pad-x), env(safe-area-inset-left, 0px));
+    padding-right: max(var(--pad-x), env(safe-area-inset-right, 0px));
     z-index: 60;
   }
   .site-nav.is-open { display: block; }
@@ -227,11 +233,14 @@ button:focus-visible {
 }
 
 .section {
-  padding: 4.5rem 0;
+  /* vertical only — do not shorthand-overwrite .wrap horizontal inset */
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 
 .section--tight {
-  padding: 3.25rem 0;
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
 }
 
 .section--cream-deep {
@@ -579,7 +588,9 @@ h3 {
 
 /* ——— Page intro (inner pages) ——— */
 .page-intro {
-  padding: 3.5rem 0 2rem;
+  /* vertical only — keep .wrap --pad-x / safe-area horizontal inset */
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -599,7 +610,8 @@ h3 {
 /* ——— Footer ——— */
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 2.75rem 0 2.5rem;
+  padding-top: 2.75rem;
+  padding-bottom: 2.5rem;
   font-size: 0.9rem;
 }
 
@@ -655,15 +667,18 @@ h3 {
   }
 
   .section {
-    padding: 3.25rem 0;
+    padding-top: 3.25rem;
+    padding-bottom: 3.25rem;
   }
 
   .section--tight {
-    padding: 2.5rem 0;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   .page-intro {
-    padding: 2.5rem 0 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .hero {
@@ -673,6 +688,12 @@ h3 {
   .hero__content {
     padding-top: 2.5rem;
     padding-bottom: 2.75rem;
+  }
+
+  /* Match Home hero inset on all .wrap (inner pages use .page-intro.wrap / .section.wrap) */
+  .wrap {
+    padding-left: max(2rem, env(safe-area-inset-left, 0px));
+    padding-right: max(2rem, env(safe-area-inset-right, 0px));
   }
 
   .hero .wrap {
@@ -695,7 +716,8 @@ h3 {
   }
 
   .site-footer {
-    padding: 2.25rem 0 2rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2rem;
   }
 }
 
