@@ -69,7 +69,7 @@ When approved, follow **[IONOS_FTP_UPLOAD.md](./IONOS_FTP_UPLOAD.md)**:
 - No Westfield or other VDR place names  
 - No megawatt ladders / invented MW figures on the open web  
 - GW / £ / TWh only as already sourced in Why Scotland figures  
-- CTA: Partner / Request NDA → `info@sylvyn.co.uk` / `rob@sylvyn.co.uk`  
+- CTA: Partner / Request NDA → `info@sylvyn.co.uk` only  
 - Company: Sylvyn Ltd, SC861646, Office 145, 18 Young Street, Edinburgh EH2 4JB  
 
 ## Next steps for Rob
