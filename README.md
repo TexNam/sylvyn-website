@@ -9,7 +9,7 @@ Institutional front door for **Sylvyn Ltd** (SC861646). Cream / Montserrat Light
 | `index.html` | Home — hero, renewables proof, Market + Moat, CTA |
 | `why-scotland.html` | Beats + renewables strip (sourced GW / £ / TWh only) |
 | `about.html` | Who Sylvyn is + company identity |
-| `partners.html` | Partnership in practice + NDA line |
+| `partners.html` | Partnership in practice |
 | `contact.html` | Door — info@sylvyn.co.uk only |
 | `css/styles.css` | Locked palette + typography |
 | `js/main.js` | Mobile nav only |
@@ -68,6 +68,7 @@ When approved, follow **[IONOS_FTP_UPLOAD.md](./IONOS_FTP_UPLOAD.md)**:
 ## Content rails (do not break)
 
 - No Westfield or other VDR place names
+- Exactly one public NDA mention: Partners detail line only (not Home / footer / other pages)
 - No megawatt ladders / invented MW figures on the open web
 - GW / £ / TWh only as already sourced in Why Scotland figures
 - CTA: Partner with us / Get in touch → `info@sylvyn.co.uk` only
