@@ -15,7 +15,7 @@
   --max: 72rem;
   --text: 1.0625rem;
   --leading: 1.65;
-  --pad-x: 1.5rem;
+  --pad-x: 2rem;
   --font-display: "Montserrat", system-ui, sans-serif;
   --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
@@ -350,8 +350,8 @@ h3 {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 100%;
-  padding: 3.5rem 0 3.75rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.75rem;
 }
 
 .hero__wordmark {
@@ -641,7 +641,7 @@ h3 {
 /* ——— Phone / small tablet ——— */
 @media (max-width: 640px) {
   :root {
-    --pad-x: 1.15rem;
+    --pad-x: 1.5rem;
     --text: 1rem;
   }
 
@@ -662,7 +662,8 @@ h3 {
   }
 
   .hero__content {
-    padding: 2.5rem 0 2.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.75rem;
   }
 
   .cta-row {
@@ -692,5 +693,11 @@ h3 {
   .site-nav a {
     font-size: 0.75rem;
     letter-spacing: 0.05em;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --pad-x: 2.5rem;
   }
 }
