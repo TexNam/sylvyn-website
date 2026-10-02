@@ -1,0 +1,7 @@
+# GitHub Pages / Jekyll — keep repo docs off the public site surface.
+# Site content is static HTML/CSS/JS only. Do not add .nojekyll.
+exclude:
+  - README.md
+  - IONOS_FTP_UPLOAD.md
+  - "**/*.md"
+  - _internal
